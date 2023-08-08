@@ -1,5 +1,10 @@
 <template>
-  <h1>我是根组件</h1>
+  <el-button type="primary" size="large" :icon="Plus">
+    进入组件之间通信demo
+  </el-button>
+  <el-button type="primary" size="large" :icon="Plus">
+    进入表单交互demo
+  </el-button>
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -12,6 +17,7 @@
 </template>
 
 <script setup lang="ts">
+import { Plus } from '@element-plus/icons-vue';
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 

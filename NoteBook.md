@@ -19,6 +19,12 @@ yarn dev  #  运行项目
 2. 配置eslint
    1. npm init @eslint/config 或者 npx eslint --init 
       1. 选择配置项
+3. 引入ElementPlus
+   1. 安装 yarn add element-plus
+   2. 在main.ts中引入
+4. 引入windiCss
+   1. 安装 yarn add -D vue-cli-plugin-windicss
+   2. yarn add vite-plugin-windicss
 
 ## 组件之间通信
 
