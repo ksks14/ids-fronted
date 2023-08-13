@@ -1,37 +1,23 @@
 <template>
-  <el-button type="primary" size="large" :icon="Plus">
-    进入组件之间通信demo
-  </el-button>
-  <el-button type="primary" size="large" :icon="Plus">
-    进入表单交互demo
-  </el-button>
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="common-layout">
+    <el-container>
+      <el-header class="w-full bg-gray-500" height="60px">头部导航栏</el-header>
+      <el-container>
+        <asideList></asideList>
+        <el-container>
+          <el-main>
+            <router-view class="p-20"></router-view>
+          </el-main>
+          <el-footer class="bg-gray-300">底部框</el-footer>
+        </el-container>
+      </el-container>
+    </el-container>
   </div>
-  <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <script setup lang="ts">
-import { Plus } from '@element-plus/icons-vue';
-// import HelloWorld from './components/HelloWorld.vue'
+import asideList from './views/asideList.vue';
 </script>
 
 <style scoped>
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-} */
 </style>

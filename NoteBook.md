@@ -26,7 +26,36 @@ yarn dev  #  运行项目
    1. 安装 yarn add -D vue-cli-plugin-windicss
    2. yarn add vite-plugin-windicss
 
+## 路由配置
+
+利用Vue-router
+
+```bash
+# 添加Vue-Router
+yarn add vue-router
+```
+
+1. login
+   1. -> home
+2. 404
+
 ## 组件之间通信
 
 1. props
 2. ref
+
+## 事件
+
+### 登录
+
+1. 点击登录，进入登录主页面
+   1. 点击按钮进入登录路由 完成
+   2. 点击无账号，进入注册弹窗
+      1. 注册输入用户名
+      2. 输入密码
+      3. 进行校验
+      4. 完成注册
+   3. 登录表单
+      1. 用户名
+      2. 密码
+      3. 校验
